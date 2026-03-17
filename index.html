@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Сервис Развал-Схождение</title>
+<style>
+  /* Сброс стилей */
+  * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+
+  html, body {
+    height: 100%;
+    width: 100%;
+  }
+
+  body {
+    /* Фоновое изображение */
+    background-image: url("https://i.postimg.cc/4NDhj34Z/Chat-GPT-Image-17-mar-2026-g-12-16-43.png");
+    background-size: cover;          /* Покрывает весь экран */
+    background-position: center;      /* Центрирует изображение */
+    background-repeat: no-repeat;     /* Без повторения картинки */
+    background-attachment: fixed;     /* Фиксированный фон при прокрутке */
+    color: #f0f0f0;
+    line-height: 1.6;
+  }
+
+  /* Полупрозрачная тёмная подложка для читаемости */
+  .overlay {
+    background: rgba(0,0,0,0.65);
+    min-height: 100vh;
+    padding-bottom: 50px;
+  }
+
+  header { text-align: center; padding: 20px; }
+  header h1 { color: #ff6600; }
+
+  nav a {
+    color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold;
+  }
+  nav a:hover { color: #ff6600; }
+
+  section { padding: 40px 20px; max-width: 1200px; margin: auto; }
+
+  .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+  .service { background: rgba(34,34,34,0.8); padding: 20px; border-radius: 10px; }
+  .service h3 { color: #ff6600; margin-bottom: 10px; }
+
+  .contact form { display: flex; flex-direction: column; gap: 15px; max-width: 400px; margin: auto; }
+  .contact input, textarea { padding: 10px; border-radius: 5px; border: none; }
+  .contact button { background: #ff6600; padding: 10px; border-radius: 5px; cursor: pointer; font-weight: bold; }
+
+  footer { text-align: center; padding: 20px; color: #aaa; }
+</style>
+</head>
+<body>
+
+<div class="overlay">
+  <header>
+    <h1>Сервис Развал-Схождение</h1>
+    <nav>
+      <a href="#services">Услуги</a>
+      <a href="#prices">Цены</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+  </header>
+
+  <section id="services">
+    <h2>Наши услуги</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Развал-схождение</h3>
+        <p>Точная настройка углов для безопасной езды и сохранения шин.</p>
+      </div>
+      <div class="service">
+        <h3>Балансировка</h3>
+        <p>Комфортное и плавное движение без вибраций.</p>
+      </div>
+      <div class="service">
+        <h3>Диагностика подвески</h3>
+        <p>Проверка всех элементов подвески автомобиля.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="prices">
+    <h2>Цены</h2>
+    <ul>
+      <li>Развал-схождение – 1500 ₽</li>
+      <li>Балансировка – 500 ₽</li>
+      <li>Диагностика подвески – 800 ₽</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Запись на услугу</h2>
+    <form>
+      <input type="text" placeholder="Ваше имя" required>
+      <input type="tel" placeholder="Телефон" required>
+      <textarea placeholder="Сообщение (опционально)" rows="4"></textarea>
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2026 Сервис Развал-Схождение
+  </footer>
+</div>
+
+</body>
+</html>
